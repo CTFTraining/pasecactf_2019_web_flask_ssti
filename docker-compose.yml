@@ -5,4 +5,6 @@ services:
     build: .
     image: ctftraing/paseca_2019_flask_ssti
     ports:
-        - 8470:1337
+      - 8470:1337
+    environment:
+      - FLAG=flag{flag_test}

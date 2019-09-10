@@ -4,8 +4,6 @@ COPY ./files /app
 
 RUN pip install -r app/requirements.txt
 
-USER nobody:nogroup
-
 WORKDIR /app
 
-CMD python app.py
+CMD sh -c "echo $FLAG > /app/flag && export FLAG=not_flag && FLAG=not_flag" && python app.py
