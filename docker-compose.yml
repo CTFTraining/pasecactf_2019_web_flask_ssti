@@ -3,7 +3,7 @@ services:
 
   service:
     build: .
-    image: ctftraing/paseca_2019_flask_ssti
+    image: ctftraing/pasecactf_2019_flask_ssti
     ports:
       - 8470:1337
     environment:
